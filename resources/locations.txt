@@ -1,0 +1,82 @@
+[
+    {
+        "location": "Sydney",
+        "position": [
+            -33.86,
+            151.21,
+            39
+        ]
+    },
+    {
+        "location": "Melbourne",
+        "position": [
+            -37.81,
+            144.96,
+            31
+        ]
+    },
+    {
+        "location": "Canberra",
+        "position": [
+            -35.47,
+            149.01,
+            720
+        ]
+    },
+    {
+        "location": "Victoria",
+        "position": [
+            -36.68,
+            143.58,
+            209
+        ]
+    },
+    {
+        "location": "Hobart",
+        "position": [
+            42.88,
+            147.32,
+            19
+        ]
+    },
+    {
+        "location": "Perth",
+        "position": [
+            -31.95,
+            115.85,
+            15
+        ]
+    },
+    {
+        "location": "Adelaide",
+        "position": [
+            -34.66,
+            138.68,
+            59
+        ]
+    },
+    {
+        "location": "Brisbane",
+        "position": [
+            -27.47,
+            153.02,
+            28
+        ]
+    },
+    {
+        "location": "NewCastle",
+        "position": [
+            32.92,
+            151.78,
+            9
+        ]
+    },
+    {
+        "location": "GoldCoast",
+        "position": [
+            -28.01,
+            153.40,
+            12
+        ]
+    }
+]

@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+sourceSets.main.java.srcDirs = ['src']
+mainClassName = 'com.tcs.weather.handler.WeatherSimulatorHandler'
+tasks.withType(Test) {
+    scanForTestClasses = false
+    include "**/*WeatherReportingServiceImplTest.class" // whatever Ant pattern matches your test class files
+}
+// tag::repositories[]
+repositories {
+    mavenCentral()
+}
+// end::repositories[]
+
+// tag::jar[]
+jar {
+    baseName = 'weather-simulator'
+    version =  '0.1.0'
+}
+// end::jar[]
+
+// tag::dependencies[]
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "com.googlecode.json-simple:json-simple:1.1.1"
+    testCompile "junit:junit:4.12"
+}
+// end::dependencies[]
+
+// tag::wrapper[]
+// end::wrapper[]
