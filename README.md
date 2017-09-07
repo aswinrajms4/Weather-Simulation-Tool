@@ -10,7 +10,7 @@ For each location, temperature index values based on latitude & elevation is cal
 1. The temperature is minimum in Polar (MAX_LAT) and maximum at the equator (MIN_LAT), and the index of same is calculated by normalisation.
 2. Similar calaculation is done on the basis of elevation.
 3. Average of the temperature index is multiplied with a standard maximum global temperature to fetch the temperature of a location.
-For calculating pressure & humidity, the universal formula's are applied.
+4. For calculating pressure & humidity, the universal formula's are applied.
 
 ## Softwares Required
 
