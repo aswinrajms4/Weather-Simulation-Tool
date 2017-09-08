@@ -29,9 +29,7 @@ public class WeatherReportingServiceImpl implements WeatherReportingService {
 	 * each location , calculate the humidity, temperature and pressure and find
 	 * the weather condition.
 	 * 
-	 * @throws ParseException
-	 * @throws IOException
-	 * @throws FileNotFoundException
+	 * @throws WeatherSimulationException
 	 */
 	@Override
 	public ArrayList<WeatherData> getWeather()
@@ -91,7 +89,6 @@ public class WeatherReportingServiceImpl implements WeatherReportingService {
 	 * Humidity, Pressure, Temperature, WeatherCondition
 	 * 
 	 * @param arrayListWeatherData
-	 * @param currentDateTime
 	 * @return
 	 */
 	public ArrayList<WeatherData> calculateWeather(
@@ -118,7 +115,6 @@ public class WeatherReportingServiceImpl implements WeatherReportingService {
 	 * be fetched for the 10 cities
 	 * 
 	 * @param arrayListWeatherData
-	 * @param currentDateTime
 	 */
 	@Override
 	public void generateWeatherInfo(ArrayList<WeatherData> arrayListWeatherData) {
@@ -140,8 +136,7 @@ public class WeatherReportingServiceImpl implements WeatherReportingService {
 	/**
 	 * Method to generate Humidity at the given location
 	 * 
-	 * Absolute humidity is defined as the mass of water vapour in a certain
-	 * volume. If ideal gas behaviour is assumed the absolute humidity can be
+	 *If ideal gas behaviour is assumed the absolute humidity can be
 	 * calculated using A = C · Pw/T (g/m3) , where C = Constant 2.16679 gK/J Pw
 	 * = Vapour pressure in Pa T = Temperature in K
 	 * 
@@ -158,8 +153,8 @@ public class WeatherReportingServiceImpl implements WeatherReportingService {
 	/**
 	 * This method generates the pressure in hPa
 	 * P = SeaLevel Pressure * power((1- 0.0065h/ T+0.0065h + 273.15), 5.257)
-	 * @param elev
-	 * @param temp
+	 * @param elevation
+	 * @param temperature
 	 * @return The calculated pressure in hPa
 	 */
 	private double getPressure(double elevation, double temperature) {
