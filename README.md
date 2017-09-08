@@ -3,7 +3,7 @@ Application to predict the fake weather data of a location.
 Fetches location details from a locations.txt file and predict the output based on longitude,latitude and elevation.
 
 ## Algorithm
-The application takes a location.txt file as input, wherein the latitude,longityde and elevation of a location is captured in json format. The format is :
+The application takes a location.txt file as input, wherein the latitude,longitude and elevation of a location is captured in json format.
 
 ### Temperature, Pressure and Relative Humidity Algorithm
 For each location, temperature index values based on latitude & elevation is calculated, based on the below assumption:
@@ -16,6 +16,7 @@ For each location, temperature index values based on latitude & elevation is cal
 
 * [jdk1.7+]
 * [Eclipse] - IDE 
+* [gradle] - build tool
 
 ## Steps to run the application and the testcases
 Open the command prompt and change directory to the project folder and execute the below commands.
